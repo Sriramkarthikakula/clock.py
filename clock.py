@@ -4,7 +4,7 @@ from time import strftime
 root = Tk()
 root.title("clock")
 def time():
-    string = strftime("%H:%M:%S %p")
+    string = strftime("%d/%B/%Y \n %H:%M:%S %p")
     label.config(text=string)
     label.after(1000,time)
 label = Label(root, font=("game_of_squids" , 80) , background="black" , foreground="cyan")
